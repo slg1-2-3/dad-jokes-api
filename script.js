@@ -13,14 +13,17 @@ async function getJoke(){
         }
    
     const result = await response.json();
-    console.log(result, result.joke);    
+    console.log(result, result.joke)
+    return result.joke    
     }
     catch (error) {console.error(error.message)} 
 };
 
 const btn = document.querySelector("#jokeBtn");
+const joke = document.querySelector("#joke");
 
-btn.addEventListener("click", () => {
+btn.addEventListener("click", async () => {
     setBackgroundColor("#jokeBtn");
-    getJoke();
+    let jokeText = await getJoke();
+    joke.textContent = jokeText
 })
