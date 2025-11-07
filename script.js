@@ -19,11 +19,25 @@ async function getJoke(){
     catch (error) {console.error(error.message)} 
 };
 
+function getHelloWorld(){
+    const url = "http://localhost:3000/"
+    const response = fetch(url, {headers: {"Accept": "application/json"}})
+    return response
+
+}
+
+function getHelloWorld2(){
+    const url = "http://localhost:3000/hello2"
+    const response = fetch(url, {headers: {"Accept": "application/json"}})
+    return response
+
+}
+
 const btn = document.querySelector("#jokeBtn");
 const joke = document.querySelector("#joke");
 
 btn.addEventListener("click", async () => {
     setBackgroundColor("#jokeBtn");
-    let jokeText = await getJoke();
+    let jokeText = await getHelloWorld2();
     joke.textContent = jokeText
 })
