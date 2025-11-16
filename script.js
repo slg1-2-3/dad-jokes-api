@@ -7,9 +7,7 @@ function setBackgroundColor(id) {
 async function displayJoke() {
     const url = "http://localhost:3000/joke"
         const response = await fetch(url, {headers: {"Accept": "application/json"}})
-        console.log("response is -->", response)
         const data = await response.json()
-        console.log("data is -->", data.joke)
     return data.joke
 }
 
