@@ -11,12 +11,32 @@ async function displayJoke() {
     return data.joke
 }
 
-const btn = document.querySelector("#jokeBtn");
+async function searchJokes() {
+    const url = "http://localhost:3000/search"
+        const response = await fetch (url, {headers: {"Accept": "application/json"}})
+        const data = await response
+        console.log("the data in searchJoke is -->",data)
+    return data /*return an array of jokes (5)*/ 
+}
+
+const jokeBtn = document.querySelector("#jokeBtn");
 const joke = document.querySelector("#joke");
 
-btn.addEventListener("click", async () => {
+
+jokeBtn.addEventListener("click", async () => {
     setBackgroundColor("#jokeBtn");
     let jokeText = await displayJoke();
     console.log("jokeText is -->", )
     joke.textContent = jokeText
+})
+
+const searchBtn = document.querySelector("#searchBtn");
+const search = document.querySelector("#search")
+
+// search button
+searchBtn.addEventListener("click", async() => {
+    setBackgroundColor("#searchBtn");
+    let searchText = await searchJokes();
+    console.log("searchText is --> ", searchText)
+    search.textContent = searchText
 })

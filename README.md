@@ -20,8 +20,12 @@
     - Note: now there's an insane delay between pressing the "Get Joke" button and seeing the joke. Maybe a loading screen is a good idea. 
 - 🎧: [chill chill journal🐈‍⬛](https://www.youtube.com/watch?v=9kzE8isXlQY&list=RD9kzE8isXlQY&start_radio=1)
 
+# 2025-11-18
+- 🎧: [Gas Station Radio: DJ Junk Food](https://www.youtube.com/watch?v=bDGhu2DgSDA)
+- 😢search jokes based off of keyword
+    -Note 📝: Updated the html & css no problem to have a new tile. The problems came when I tried to update the controller, route, and services files along wit the script file. For some reason I'm not displaying hello world when I press the button.  
+
 # Next Up
 - loading screen
 - add a limit to requests (5 req per hour)
 - search jokes based off of keyword
-- be able to pull back 10 jokes
