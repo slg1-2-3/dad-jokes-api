@@ -23,7 +23,7 @@
 # 2025-11-18
 - 🎧: [Gas Station Radio: DJ Junk Food](https://www.youtube.com/watch?v=bDGhu2DgSDA)
 - 😢search jokes based off of keyword
-    -Note 📝: Updated the html & css no problem to have a new tile. The problems came when I tried to update the controller, route, and services files along wit the script file. For some reason I'm not displaying hello world when I press the button.  
+      - Note 📝: Updated the html & css no problem to have a new tile. The problems came when I tried to update the controller, route, and services files along with the script file. For some reason I'm not displaying hello world when I press the button.  
 
 # Next Up
 - loading screen
