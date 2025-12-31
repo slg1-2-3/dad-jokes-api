@@ -19,7 +19,7 @@ async function getJoke(){
  somehow I have to pass the term from the front to here... 
  but first I want to get Hello world to pop up when I press 
 the button */
-function searchJokes(){
+function searchJokes() {
     return "hello world"
 }
 module.exports = {getJoke, searchJokes};

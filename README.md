@@ -23,7 +23,14 @@
 # 2025-11-18
 - 🎧: [Gas Station Radio: DJ Junk Food](https://www.youtube.com/watch?v=bDGhu2DgSDA)
 - 😢search jokes based off of keyword
-    -Note 📝: Updated the html & css no problem to have a new tile. The problems came when I tried to update the controller, route, and services files along wit the script file. For some reason I'm not displaying hello world when I press the button.  
+    -Note 📝: Updated the html & css no problem to have a new tile. The problems came when I tried to update the controller, route, and services files along wit the script file. For some reason I'm not displaying hello world when I press the button. 
+
+# 2025-12-31
+- search jokes based off of keyword
+    - Note 📝: Turns out the error for the new tile was because I was missing "const data = await response.json()" specifically the .json() portion. Now I see "hello world" 
+- added a space for user input 
+
+
 
 # Next Up
 - loading screen

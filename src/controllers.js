@@ -7,6 +7,5 @@ exports.getJoke = async (req, res) => {
 
 exports.searchJokes = async (req, res) => {
     const response = await services.searchJokes();
-    console.log('in controller file --> response is: ', response)
     res.status(200).json(response)
 }
