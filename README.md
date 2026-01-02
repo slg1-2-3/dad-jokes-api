@@ -30,7 +30,10 @@
     - Note 📝: Turns out the error for the new tile was because I was missing "const data = await response.json()" specifically the .json() portion. Now I see "hello world" 
 - added a space for user input 
 
-
+# 2026-01-01
+- search jokes based off of keyword
+    - Note 📝: Happy New Year! Today's goal is to use the user input in our query. 
+    - Ok, we've got the user input on script.js working. 🏃🏾‍♀️ Next time the goal is to pass that value to the "backend" in services.js
 
 # Next Up
 - loading screen
