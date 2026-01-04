@@ -36,6 +36,7 @@ const search = document.querySelector("#search")
 
 searchBtn.addEventListener("click", async() => {
     setBackgroundColor("#searchBtn");
-    let searchTerm = document.getElementById("search").value;
+    let searchTerm = search.value
+    console.log('searchTerm is -->', searchTerm)
     let jokes = await searchJokes(searchTerm);
 })

@@ -34,6 +34,13 @@
 - search jokes based off of keyword
     - Note 📝: Happy New Year! Today's goal is to use the user input in our query. 
     - Ok, we've got the user input on script.js working. 🏃🏾‍♀️ Next time the goal is to pass that value to the "backend" in services.js
+# 2026-01-02
+- search jokes based off of keyword
+    - Today we'll learn about [forms](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form) 
+
+# 2026-01-03
+Learned more about [sending form data](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Sending_and_retrieving_form_data)
+[Javascript Form Submission](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Sending_forms_through_JavaScript)
 
 # Next Up
 - loading screen
