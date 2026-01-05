@@ -23,13 +23,14 @@ async function searchJokes(searchTerm) {
     if (searchTerm === ''){return "You did not search anything!"} 
 
     const url = "https://icanhazdadjoke.com/search?term="+searchTerm 
-    console.log("inside services, this is the url --> ", url)
+
     try{
         const response = await fetch(url, {headers: {"Accept": "application/json"}})
         if (!response.ok) {
             throw new Error(`Response Status: ${response.status}`);
         }
         const result = await response.json()
+        console.log(result)
         return result;
     }
     catch (error) {console.error(error.message)} 

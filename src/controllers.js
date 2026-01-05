@@ -5,7 +5,8 @@ exports.getJoke = async (req, res) => {
     res.status(200).json(joke);
 }
 
-exports.searchJokes = async (req, res) => {
-    const response = await services.searchJokes();
+exports.searchJokes = async (req, res) => {   
+    const searchTerm = req.query.term
+    const response = await services.searchJokes(searchTerm);
     res.status(200).json(response)
 }

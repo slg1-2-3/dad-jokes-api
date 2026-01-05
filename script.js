@@ -15,8 +15,11 @@ async function displayJoke() {
 async function searchJokes(searchTerm) {
     if (searchTerm === '') {return "You didn't search anything!"}
     const url = "http://localhost:3000/search"
-        const response = await fetch (url, {headers: {"Accept": "application/json"}})
+    const params = new URLSearchParams();
+    params.append("term", searchTerm)
+        const response = await fetch (`${url}?${params.toString()}`, {headers: {"Accept": "application/json"}})
         const data = await response.json()
+        console.log(data)
     return data /*return an array of jokes (5)*/ 
 }
 
@@ -34,7 +37,8 @@ jokeBtn.addEventListener("click", async () => {
 const searchBtn = document.querySelector("#searchBtn");
 const search = document.querySelector("#search")
 
-searchBtn.addEventListener("click", async() => {
+searchBtn.addEventListener("click", async(event) => {
+    event.preventDefault()
     setBackgroundColor("#searchBtn");
     let searchTerm = search.value
     console.log('searchTerm is -->', searchTerm)
