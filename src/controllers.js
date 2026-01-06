@@ -8,5 +8,6 @@ exports.getJoke = async (req, res) => {
 exports.searchJokes = async (req, res) => {   
     const searchTerm = req.query.term
     const response = await services.searchJokes(searchTerm);
-    res.status(200).json(response)
+    res.status(200).json(response);
+    // note to self, the response.results is an array of around 20 jokes
 }

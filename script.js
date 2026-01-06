@@ -19,8 +19,9 @@ async function searchJokes(searchTerm) {
     params.append("term", searchTerm)
         const response = await fetch (`${url}?${params.toString()}`, {headers: {"Accept": "application/json"}})
         const data = await response.json()
-        console.log(data)
-    return data /*return an array of jokes (5)*/ 
+        console.log(`in scripts.js`);
+        console.log(data.results[0].joke);
+    return data.results[0].joke;
 }
 
 const jokeBtn = document.querySelector("#jokeBtn");
@@ -36,11 +37,12 @@ jokeBtn.addEventListener("click", async () => {
 // search components
 const searchBtn = document.querySelector("#searchBtn");
 const search = document.querySelector("#search")
+const searchJokeText = document.querySelector("#searchJokeText")
 
 searchBtn.addEventListener("click", async(event) => {
     event.preventDefault()
     setBackgroundColor("#searchBtn");
     let searchTerm = search.value
-    console.log('searchTerm is -->', searchTerm)
-    let jokes = await searchJokes(searchTerm);
+    let joke = await searchJokes(searchTerm);
+    searchJokeText.textContent = joke;
 })

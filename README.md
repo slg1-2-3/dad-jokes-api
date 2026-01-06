@@ -46,8 +46,10 @@ Learned more about [sending form data](https://developer.mozilla.org/en-US/docs/
 Learning about [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - Note 📝: OMG it works 🥳💃🏾. The jokes are just in the console for now, we'll work on displaying them later. In short we learned that a "form" within html is the typical way for users to input data. Then for the data to be sent along, we include the search term to the parameters of the url to be sent to the controller. The controller then saves the search term as a variable from the req.query.term {"term":"searchString"} and passes THAT along to services.js where we actually search the Dad Joke API with our user inputted search term! In short html --> scripts.js --> controllers.js --> services.js --> Dad Joke API 😸
 
-# Next Up
-- Display searched jokes
+# 2026-01-05
+- Displayed the joke in a new <p> tag 😊. Just took one joke from the array for now.
+
+# Next Up 
 - loading screen
 - add a limit to requests (5 req per hour)
-- search jokes based off of keyword
+- ✅search jokes based off of keyword
