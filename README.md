@@ -49,7 +49,11 @@ Learning about [Using the Fetch API](https://developer.mozilla.org/en-US/docs/We
 # 2026-01-05
 - Displayed the joke in a new <p> tag 😊. Just took one joke from the array for now.
 
-# Next Up 
+# 2026-01-06
+- Ok, time to make a loading screen. Following [this person's tutorial](https://dev.to/lensco825/how-to-quickly-add-a-loading-screen-onto-your-website-7ga)
+- Managed to get the spinner on the front page, however, it's just there. I want it to only pop up **after** we click "search jokes" button. 
+
+# Next Up  
 - loading screen
 - add a limit to requests (5 req per hour)
 - ✅search jokes based off of keyword

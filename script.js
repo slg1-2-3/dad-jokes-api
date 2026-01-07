@@ -11,7 +11,6 @@ async function displayJoke() {
     return data.joke
 }
 
-
 async function searchJokes(searchTerm) {
     if (searchTerm === '') {return "You didn't search anything!"}
     const url = "http://localhost:3000/search"
@@ -38,6 +37,10 @@ jokeBtn.addEventListener("click", async () => {
 const searchBtn = document.querySelector("#searchBtn");
 const search = document.querySelector("#search")
 const searchJokeText = document.querySelector("#searchJokeText")
+
+// loading screen components
+const loadingScreen = document.querySelector("#.loadingScreen");
+const loadingSpinner = document.querySelector("#spinner")
 
 searchBtn.addEventListener("click", async(event) => {
     event.preventDefault()
