@@ -54,6 +54,7 @@ Learning about [Using the Fetch API](https://developer.mozilla.org/en-US/docs/We
 - Managed to get the spinner on the front page, however, it's just there. I want it to only pop up **after** we click "search jokes" button. 
 
 # Next Up  
+- research spike to implement "saving" a joke to a database
 - loading screen
 - add a limit to requests (5 req per hour)
 - ✅search jokes based off of keyword
