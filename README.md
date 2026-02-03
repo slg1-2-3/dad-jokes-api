@@ -53,8 +53,12 @@ Learning about [Using the Fetch API](https://developer.mozilla.org/en-US/docs/We
 - Ok, time to make a loading screen. Following [this person's tutorial](https://dev.to/lensco825/how-to-quickly-add-a-loading-screen-onto-your-website-7ga)
 - Managed to get the spinner on the front page, however, it's just there. I want it to only pop up **after** we click "search jokes" button. 
 
+# 2026-02-02
+🦩 today's goal is to set up connection to the database 
+🦩 also set up html / css / for a user registration page
+
 # Next Up  
-- research spike to implement "saving" a joke to a database
-- loading screen
-- add a limit to requests (5 req per hour)
+- ✅research spike to implement "saving" a joke to a database
 - ✅search jokes based off of keyword
+- loading screen (2026-02-02 forget about this for a a bit)
+- add a limit to requests (5 req per hour)

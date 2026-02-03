@@ -6,7 +6,7 @@ The goal of this research spike is to learn more about:
         -  To connect the database to our express application, we'll need to provide the credentials so our web framework can access the database and make queries.
 - **Database Structure Questions**
     - How to structure the tables within the database
-        - ![Picture of the diagram](images/database_diagram.png)
+        - ![Picture of the diagram](database_diagram.png)
     - How to associate jokes with users
         - We'll create a join table that just has the user_id and the joke_id and that equals a unique row. 
     - What data and datatypes should be used in our tables? 
@@ -18,4 +18,4 @@ The goal of this research spike is to learn more about:
         - The way we can do this is using passport.js where we use a local strategy to set up a username and password within our database. 
     - How to return jokes from the database to a specific user
         - We'd use the join table, HOWEVER, a question is if there's a limit on how many jokes a user will see at once (like if they saved 50 jokes, should all 50 be returned at once?)
-
+    - How will we address user roles? 
