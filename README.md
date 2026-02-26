@@ -57,6 +57,11 @@ Learning about [Using the Fetch API](https://developer.mozilla.org/en-US/docs/We
 🦩 today's goal is to set up connection to the database 
 🦩 also set up html / css / for a user registration page
 
+# 2026-02-25 
+🦩 today's goal is to set up connection to the database 
+🦩 set up html / css / for a user registration page
+    - actually trying to make the login banner w/html & css
+
 # Next Up  
 - ✅research spike to implement "saving" a joke to a database
 - ✅search jokes based off of keyword
