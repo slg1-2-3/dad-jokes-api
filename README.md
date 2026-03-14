@@ -62,6 +62,15 @@ Learning about [Using the Fetch API](https://developer.mozilla.org/en-US/docs/We
 🦩 set up html / css / for a user registration page
     - actually trying to make the login banner w/html & css
 
+# 2026-03-10
+Same as it's always been.
+🦩 set up connection to db
+
+# 2026-03-13
+🥳 finally got past the great firewall from wsl to windows!
+📝 today we set up claude, then got the banner in the css / html in the right place.
+⏭️ Work on "login modal"
+
 # Next Up  
 - ✅research spike to implement "saving" a joke to a database
 - ✅search jokes based off of keyword

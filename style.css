@@ -1,20 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 10;
 }
+
 .banner{
-    background-color:red;
+    background-color:blue;
     padding: 2rem;
     margin: 1rem;
     border-radius: 5px;
     text-align: right;
-
-
 }
 .container {
     background-color: #fff;
@@ -48,6 +46,12 @@ button:hover {
     height: 10vh;
     background-color: white;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display:flex;
     align-items: center;
     justify-content: center;
 }
