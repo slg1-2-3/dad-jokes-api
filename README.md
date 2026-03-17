@@ -71,6 +71,9 @@ Same as it's always been.
 📝 today we set up claude, then got the banner in the css / html in the right place.
 ⏭️ Work on "login modal"
 
+# 2026-03-16
+🦩 today we updated some code to try to get the modal working. After learning what a modal is. 
+
 # Next Up  
 - ✅research spike to implement "saving" a joke to a database
 - ✅search jokes based off of keyword

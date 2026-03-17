@@ -4,6 +4,11 @@ function setBackgroundColor(id) {
     element.style.backgroundColor = "rgb(0,0,0)"
 }
 
+function showModal(id){
+    const element = document.querySelector(id)
+    element.style.display = "block"
+}
+
 async function displayJoke() {
     const url = "http://localhost:3000/joke"
         const response = await fetch(url, {headers: {"Accept": "application/json"}})
@@ -39,8 +44,8 @@ const search = document.querySelector("#search")
 const searchJokeText = document.querySelector("#searchJokeText")
 
 // loading screen components
-const loadingScreen = document.querySelector("#.loadingScreen");
-const loadingSpinner = document.querySelector("#spinner")
+//const loadingScreen = document.querySelector("#.loadingScreen");
+//const loadingSpinner = document.querySelector("#spinner")
 
 searchBtn.addEventListener("click", async(event) => {
     event.preventDefault()
@@ -48,4 +53,12 @@ searchBtn.addEventListener("click", async(event) => {
     let searchTerm = search.value
     let joke = await searchJokes(searchTerm);
     searchJokeText.textContent = joke;
+})
+
+// login components
+const bannerLoginBtn = document.querySelector("#bannerLoginBtn")
+
+bannerLoginBtn.addEventListener("click", () => {
+    showModal(".modalBox");
+    console.log("you clicked me!")
 })
